@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest",
-    "postinstall": "npm run build"
+    "test": "jest"
   },
   "files": [
     "lib"
