@@ -10,9 +10,9 @@ Tired to manually generate curl from nodejs request for debugging proposes? Need
 ## Installation ⚙️
 
 ```sh
-yarn add http-to-curl
+yarn add @joshmazen/http-to-curl
 # old way
-npm install http-to-curl --save
+npm install @joshmazen/http-to-curl --save
 ```
 
 ## Usage 📚
@@ -72,6 +72,6 @@ const options = {
 httpToCurl(options);
 ```
 
-## Contributing
+## About this fork
 
-We'd ❤️ to have your helping hand on http-to-curl! Feel free to PR's, add issues or give feedback! Happy Hacking!! 😎
+This repo was forked to add support for search params in urls.
