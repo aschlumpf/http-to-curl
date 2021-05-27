@@ -1,9 +1,9 @@
 {
-  "name": "@joshmazen/http-to-curl",
+  "name": "@aschlumpf/http-to-curl",
   "version": "1.0.0",
   "description": "Convert node HTTP request to curl",
   "main": "lib/bundle.js",
-  "author": "Josh Mazen",
+  "author": "Alex Schlumpf",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshmazen14/http-to-curl.git"
+    "url": "git+https://github.com/aschlumpf/http-to-curl.git"
   },
   "bugs": {
-    "url": "https://github.com/joshmazen14/http-to-curl/issues"
+    "url": "https://github.com/aschlumpf/http-to-curl/issues"
   },
-  "homepage": "https://github.com/joshmazen14/http-to-curl#readme"
+  "homepage": "https://github.com/aschlumpf/http-to-curl#readme"
 }

@@ -140,7 +140,8 @@ export function requestPatch(regex, request, options, cb, customCallback) {
 
   monkeypatch(clientReq, 'end', (original, data, encoding, cb) => {
     let body = '';
-    if (data) {
+    const transformedData = typeof data !== "function" ? data : data();
+    if (transformedData) {      
       bodyData.push(data);
     }
     if (bodyData.length > 0) {

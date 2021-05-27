@@ -7,14 +7,6 @@
 
 Tired to manually generate curl from nodejs request for debugging proposes? Need to export nodejs request to your REST client (e.g. [Insomnia](https://insomnia.rest/) and [Postman](https://www.getpostman.com/))? http-to-curl come to the rescue!!
 
-## Installation ⚙️
-
-```sh
-yarn add @joshmazen/http-to-curl
-# old way
-npm install @joshmazen/http-to-curl --save
-```
-
 ## Usage 📚
 
 ```js
@@ -48,16 +40,16 @@ It will listen all your nodejs http request and generate curl for each request. 
 `http-to-curl` support filtering url using regex and string. Only match url will be generated.
 
 ```js
-import httpToCurl from 'http-to-curl';
+import httpToCurl from "http-to-curl";
 //Single url match
 const options = {
-  filter: /api\/v1/
-}
+  filter: /api\/v1/,
+};
 httpToCurl(options);
 //Multiple url match
 const options = {
-  filter: [/api\/v1/, /api\/v3/]
-}
+  filter: [/api\/v1/, /api\/v3/],
+};
 httpToCurl(options);
 ```
 
@@ -65,8 +57,8 @@ httpToCurl(options);
 
 ```js
 const options = {
-  customCallback: function(curlString) {
-    console.log('hey this is the custom callback', curlString);
+  customCallback: function (curlString) {
+    console.log("hey this is the custom callback", curlString);
   },
 };
 httpToCurl(options);
@@ -74,4 +66,7 @@ httpToCurl(options);
 
 ## About this fork
 
-This repo was forked to add support for search params in urls.
+This repo was forked to:
+
+- Add support for search params in urls.
+- Fix a bug where the [https://www.npmjs.com/package/got](got) library does not work.
